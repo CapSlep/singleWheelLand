@@ -8,8 +8,8 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
 (function (exp) {
-  const countryCode = "en";
-  const lang = "en";
+  const countryCode = "sa";
+  const lang = "ar-SA";
   const locale = lang;
 
   const sizes = {
@@ -48,223 +48,232 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
 
   const reviewsArr = [
     {
-      name: "Oliver",
-      time: "A day ago",
-      header: "It's incredible!",
+      name: "محمد",
+      time: "قبل يوم واحد",
+      header: "إنه أمر لا يصدق!",
       product: "26468782",
-      review: "As a customer for many years, I was very surprised to get access to my favorite movies and series at a very reasonable price 😊",
+      review:
+        "باعتباري أحد عملاء VPN Proxy Master لسنوات عديدة، فقد فوجئت جدًا بالعثور على VPN المفضل لدي بسعر معقول جدًا 😊",
     },
     {
-      name: "Amelia",
-      time: "Two days ago",
-      header: "Great! I have no words.",
+      name: "علي",
+      time: "قبل يومين",
+      header: "رائع! لا أجد الكلمات.",
       product: "26468789",
-      review: "I decided to subscribe to Netflix for the first time and now I enjoy a wide variety of content, thanks.",
+      review:
+        "قررت تجربة VPN Proxy Master للمرة الأولى وهي الآن خدمة VPN المفضلة لدي، شكرًا لك!",
     },
     {
-      name: "George",
-      time: "Two days ago",
-      header: "Simply great.",
+      name: "فاطمة",
+      time: "قبل يومين",
+      header: "رائع ببساطة.",
       product: "26468785",
-      review: "The content is amazing, enough for the whole family, and there is always something new.",
+      review: "خدمة VPN Proxy الرئيسية ممتازة، أوصي بها للجميع، حماية موثوقة.",
     },
     {
-      name: "Olivia",
-      time: "Four days ago",
-      header: "I like it",
-      review: "Honestly, I love watching series and the Netflix subscription was exactly what I needed.",
+      name: "عائشة",
+      time: "قبل أربعة أيام",
+      header: "أعجبني",
+      review:
+        "لأكون صادقًا، أنا قلق للغاية بشأن أماني، VPN Proxy Master هو بالضبط ما أحتاجه.",
     },
     {
-      name: "Harry",
-      time: "Seven days ago",
-      header: "Wow, I love this product!",
+      name: "يوسف",
+      time: "قبل سبعة أيام",
+      header: "واو، أنا أحب هذا المنتج تماماً!",
       product: "26468784",
-      review: "At first, I thought the subscription was expensive, but fortunately, I subscribed and now I enjoy the best series and movies. Thanks, Netflix!",
+      review:
+        "في البداية اعتقدت أن VPN غير ضرورية، لكن لحسن الحظ شاركت في حملة VPN Proxy Master ولم أندم على ذلك. شكرًا لك!",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "REVIEWS AND RATINGS",
+    rr: "MEINUNGEN UND BEWERTUNGEN",
     percent: "99%",
-    rec: "Comments on this promotion",
+    rec: "تعليقات حول هذا العرض الترويجي",
   };
 
   const questions = {
-    _of: "Question {1} of {2}: ",
+    _of: "سؤال {1} من {2}: ",
     arr: [
       {
-        q: "Have you ever ordered products from McDonald's?",
+        q: "هل سبق لك أن طلبت منتجات من ماكدونالدز؟",
         a: [
-          "Yes, I order frequently",
-          "Yes, I order rarely",
-          "I have never ordered",
+          "نعم، أطلب بشكل متكرر",
+          "نعم، أطلب نادراً",
+          "لم أطلب من قبل",
         ],
       },
       {
-        q: "Should McDonald's continue with this type of advertising campaigns?",
-        a: ["Yes, of course!", "Yes, but change the promotional menu", "No"],
+        q: "هل يجب على ماكدونالدز الاستمرار في مثل هذه الحملات الإعلانية؟",
+        a: ["نعم، بالطبع!", "نعم، لكن غيروا القائمة الترويجية", "لا"],
       },
       {
-        q: "Would you recommend our products to your friends?",
-        a: ["Yes", "No"],
+        q: "هل ستوصي بمنتجاتنا لأصدقائك؟",
+        a: ["نعم", "لا"],
       },
     ],
   };
 
   const check = {
-    title: "Your answer will be reviewed",
+    title: "سيتم مراجعة إجابتك",
     arr: [
-      "You have answered question 3 of 3",
-      "Your IP address shows no previous orders",
-      "Your answer has been verified",
+      "لقد أجبت على السؤال 3 من 3",
+      "عنوان IP الخاص بك لا يُظهر طلبات سابقة",
+      "تم التحقق من إجابتك",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Thank you for participating in the survey!",
-        button: "Try your luck",
+        header: "شكراً لمشاركتك في الاستبيان!",
+        button: "حاول حظك",
         text: `
 <center>
-    To get the McDonald's menu at a promotional price, you must choose the correct gift box.
-    <br><br>
-    You have 3 attempts, good luck!
-</center>
-            `,
+    للحصول على قائمة ماكدونالدز بسعر ترويجي، يجب عليك اختيار صندوق الهدايا الصحيح.
+          <br><br>
+       لديك 3 محاولات، حظاً موفقاً!
+        </center>
+      `,
       },
     },
     first: {
       texts: {
-        header: "Oh, no..",
-        button: "Try again",
+        header: "أوه، لا..",
+        button: "حاول مرة أخرى",
         text: `
-<center>
-    Unfortunately, this gift is empty. You have two attempts left, good luck!
-</center>
-            `,
+        <center>
+       للأسف، هذه الهدية فارغة! لديك محاولتان متبقيتان - حظاً موفقاً!
+        </center>
+      `,
       },
     },
     win: {
       texts: {
-        header: "Congratulations, you have received a discount on a 6-month Netflix subscription 4K+HDR coupon",
-        button: "Get the coupon",
+        header: "اشتراك VPN Proxy Master لمدة 12 شهرًا لستة أجهزة",
+        button: "احصل على القسيمة",
         text: `
 <center>
-    <p style="color: #ffffff"></p>
-    <br>
-    Click on "Get the coupon", fill out the form and pay the order.
-    <br><br>
-    Receive a text message with the coupon and instructions to activate it.
-    <br><br>
-    The coupon can be activated at any time and does not require additional payment.
+  <p style="color: #ffffff">
+  </p>
+  <br>
+  اضغط على "احصل على القسيمة"، املأ النموذج وادفع الطلب.
+   <br><br>
+  استلم رسالة نصية تحتوي على القسيمة وتعليمات تفعيلها.
+  <br><br>
+  يمكن تفعيل القسيمة في أي وقت، ولا يتطلب الأمر دفعاً إضافياً.
 </center>
-            `,
+      `,
       },
     },
   };
 
   const cartSteps = {
     personal: {
-      title: "Personal information",
+      title: "المعلومات الشخصية",
       fields: {
         name: {
           enabled: true,
-          field: "Name",
+          field: "الاسم",
         },
         family: {
           enabled: true,
-          field: "Last name",
+          field: "اللقب",
         },
         phone: {
           enabled: true,
-          field: "Phone number",
+          field: "رقم الهاتف",
         },
         email: {
           enabled: true,
-          field: "Email",
+          field: "البريد الإلكتروني",
         },
       },
     },
     delivery: {
-      title: "Delivery",
+      title: "التوصيل",
       fields: {
         city: {
           enabled: true,
-          field: "City",
+          field: "المدينة",
         },
         address: {
           enabled: true,
-          field: "Delivery address",
+          field: "عنوان التوصيل",
         },
         zip: {
           enabled: true,
-          field: "Postal code",
+          field: "الرمز البريدي",
         },
       },
     },
     payment: {
-      title: "Payment methods",
-      creditCard: "Online payment with credit card",
+      title: "طرق الدفع",
+      creditCard: "الدفع عبر الإنترنت بواسطة بطاقة الائتمان",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Order details",
-      oldPrice: "£17.99",
-      newPrice: "£2.00",
-      size: "Size",
+      title: "تفاصيل الطلب",
+      oldPrice: "299.00 PLN",
+      newPrice: "SR.7.65",
+      size: "Talla",
       subTotal: {
-        title: "Subtotal",
-        amount: "£2.00",
+        title: "قيمة الطلب",
+        amount: "SR.7.65",
       },
       delivery: {
-        title: "Delivery",
-        amount: "£0.00",
+        title: "التوصيل",
+        amount: "SR.0.00",
       },
       total: {
-        title: "Total",
-        amount: "£2.00",
+        title: "الإجمالي",
+        amount: "SR.7.65",
       },
-      checkoutButton: "Pay your order",
+      checkoutButton: "ادفع طلبك",
     },
   };
 
   const products = [
     {
       id: "26468784",
-      name: "Coupon for 6-month Netflix subscription 4K+HDR",
-      miniImg: "./src/slide3.png",
-      images: ["./src/slide3.png"],
+      name: "اشتراك VPN Proxy Master لمدة 12 شهرًا لستة أجهزة",
+      miniImg: "../src/img/slide3.png",
+
+      images: ["../src/img/slide3.png"],
     },
     {
       id: "26468782",
-      name: "Coupon for 6-month Netflix subscription 4K+HDR",
-      miniImg: "./src/slide1.png",
-      images: ["./src/slide1.png"],
+      name: "اشتراك VPN Proxy Master لمدة 12 شهرًا لستة أجهزة",
+      miniImg: "../src/img/slide1.png",
+
+      images: ["../src/img/slide1.png"],
     },
     {
       id: "26468783",
-      name: "Coupon for 6-month Netflix subscription 4K+HDR",
-      miniImg: "./src/slide2.png",
-      images: ["./src/slide2.png"],
+      name: "اشتراك VPN Proxy Master لمدة 12 شهرًا لستة أجهزة",
+      miniImg: "../src/img/slide2.png",
+
+      images: ["../src/img/slide2.png"],
     },
+
   ];
 
   const footer = {
-    cr: "© 2024 Netflix. All rights reserved.",
+    cr: "© 2024 شاهد. جميع الحقوق محفوظة.",
   };
 
   const pathImgBox = {
-    lid: "./src/box-lid.png",
-    lidIOs: "./src/box-lid-ios.png",
-    inner: "./src/box-inner.png",
-    innerGift: "./src/box-inner-gift.png",
-    box: "./src/box.png",
-    boxModal: "./src/box-modal.png",
+    lid: "../src/img/box-lid.png",
+    lidIOs: "../src/img/box-lid-ios.png",
+    inner: "../src/img/box-inner.png",
+    innerGift: "../src/img/box-inner-gift.png",
+    box: "../src/img/box.png",
+    boxModal: "../src/img/box-modal.png",
   };
 
   exp.__config = {

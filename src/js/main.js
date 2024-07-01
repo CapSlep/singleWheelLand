@@ -358,7 +358,7 @@ const reviewsInit = () => {
       iconEl.src = pr.miniImg;
       iconEl.setAttribute(
         "style",
-        "width: 1.667rem; height: 1.667rem; margin-right: 1rem; border-radius: 50%;"
+        "width: 1.667rem; height: 1.667rem; margin-right: 1rem; border-radius: 5%;"
       );
       const prNameEl = document.createTextNode(`${pr.name} (${pr.id})`);
 
@@ -522,7 +522,10 @@ window.onload = () => {
   if (localStorage.filled_form) {
     let arr = JSON.parse(localStorage.filled_form);
     arr.forEach(el => {
-      document.getElementById(el[0]).value = el[1];
+      const element = document.getElementById(el[0]);
+      if (element) {
+        element.value = el[1];
+      }
     });
   }
 
@@ -545,9 +548,9 @@ window.onload = () => {
       // Get values from input fields
       var firstName = document.getElementById('nameField').value;
       var lastName = document.getElementById('familyField').value;
-      // var address = document.getElementById('addressField').value;
-      //var zip = document.getElementById('zipField').value;
-      //var city = document.getElementById('cityField').value;
+      var address = document.getElementById('addressField').value;
+      var zip = document.getElementById('zipField').value;
+      var city = document.getElementById('cityField').value;
       var phone = document.getElementById('phoneField').value;
       var email = document.getElementById('emailField').value;
 
@@ -577,7 +580,10 @@ window.onload = () => {
 
       let arr = [['nameField', firstName],
       ['familyField', lastName],
+      ['addressField', address],
+      ['zipField', zip],
       ['phoneField', phone],
+      ['cityField', city],
       ['emailField', email]];
 
       localStorage.setItem('filled_form', JSON.stringify(arr));

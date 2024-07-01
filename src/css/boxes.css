@@ -5,10 +5,10 @@
 	-ms-flex-pack: center;
 	justify-content: center;
 	margin-top: 2.1875rem;
-  opacity: 1;
-  transition: all 1s ease 0s;
-  pointer-events: auto;
-  margin: auto;
+	opacity: 1;
+	transition: all 1s ease 0s;
+	pointer-events: auto;
+	margin: auto;
 	-ms-grid-columns: (19.5625rem) [3];
 	grid-template-columns: repeat(3, 19.5625rem);
 }
@@ -626,7 +626,6 @@
 	.hero__content {
 		max-width: 100%;
 		padding-right: 0;
-	  
 	}
 
 	.hero__text4 {
@@ -687,7 +686,6 @@
 		line-height: 1rem;
 		font-weight: 400;
 		height: 2.5rem;
-	
 	}
 
 	.box__gift {
@@ -836,51 +834,39 @@
 }
 
 @media (min-width: 20em) and (max-width: 76.5625em) {
-	@supports (
-		height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem)
-	) {
+	@supports (height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem)) {
 		.box {
 			height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem);
 		}
 	}
 
-	@supports not (
-		height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem)
-	) {
+	@supports not (height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem)) {
 		.box {
 			height: calc(10.8125rem + 8.5625 * (100vw - 20rem) / 56.5625);
 		}
 	}
 
-	@supports (
-		height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem)
-	) {
+	@supports (height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem)) {
 		.box__inner,
 		.box__front {
 			height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem);
 		}
 	}
 
-	@supports not (
-		height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem)
-	) {
+	@supports not (height: clamp(10.8125rem, 7.7848756906rem + 15.138121547vw, 19.375rem)) {
 		.box__inner,
 		.box__front {
 			height: calc(10.8125rem + 8.5625 * (100vw - 20rem) / 56.5625);
 		}
 	}
 
-	@supports (
-		width: clamp(10.4375rem, 7.210980663rem + 16.1325966851vw, 19.5625rem)
-	) {
+	@supports (width: clamp(10.4375rem, 7.210980663rem + 16.1325966851vw, 19.5625rem)) {
 		.box__inner {
 			width: clamp(10.4375rem, 7.210980663rem + 16.1325966851vw, 19.5625rem);
 		}
 	}
 
-	@supports not (
-		width: clamp(10.4375rem, 7.210980663rem + 16.1325966851vw, 19.5625rem)
-	) {
+	@supports not (width: clamp(10.4375rem, 7.210980663rem + 16.1325966851vw, 19.5625rem)) {
 		.box__inner {
 			width: calc(10.4375rem + 9.125 * (100vw - 20rem) / 56.5625);
 		}
@@ -904,9 +890,9 @@
 }
 
 .box__lid-ios {
-  background-image: url(./box-lid-ios.png) !important;
+	background-image: url(./box-lid-ios.png) !important;
 }
 
 .box__inner-gift {
-  background-image: url(./box-inner-gift.png) !important;
+	background-image: url(./box-inner-gift.png) !important;
 }

@@ -6,13 +6,13 @@
 
 @font-face {
   font-family: "Pan Display";
-  src: url(".//pan_display_r.ttf");
+  src: url("../fonts/pan_display_r.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Pan Display";
-  src: url(".//pan_display_b.ttf");
+  src: url("../fonts/pan_display_b.ttf");
   font-weight: 700;
 }
 
@@ -2225,13 +2225,13 @@ body {
 
 @font-face {
   font-family: "Pan Display";
-  src: url(".//pan_display_r.ttf");
+  src: url("../fonts/pan_display_r.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Pan Display";
-  src: url(".//pan_display_b.ttf");
+  src: url("../fonts/pan_display_b.ttf");
   font-weight: 700;
 }
 
@@ -2665,7 +2665,7 @@ hr {
 .ratingbox {
   align-content: stretch;
   align-items: stretch;
-  background-color: #000000;
+  background-color: #1E1A2F;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -2783,7 +2783,7 @@ hr {
 .reviews {
   border-top: 1px solid #e8e3df;
   width: 100%;
-  /* direction: rtl; */
+  direction: rtl;
 }
 
 .review {
@@ -2857,8 +2857,8 @@ hr {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  /* direction: rtl; */
-  /* text-align: right; */
+  direction: rtl;
+  text-align: right;
 }
 
 @media (min-width: 1024px) {
@@ -3366,12 +3366,12 @@ input[type="radio"] {
 }
 
 .iti__flag {
-  background-image: url("./flags.png");
+  background-image: url("../img/flags.png");
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .iti__flag {
-    background-image: url("./flags_2x.png");
+    background-image: url("../img/flags_2x.png");
   }
 }
 
@@ -3454,6 +3454,8 @@ button:not(:disabled) {
     max-width: -moz-fit-content;
     max-width: fit-content;
     width: 100%;
+    background: linear-gradient(90deg,#29c5a6,#0097c7);
+    color: #fff;
   }
 }
 
@@ -3531,9 +3533,8 @@ video {
 
   .submit-shipping {
     margin-top: 1rem !important;
-    background-color: #000000;
-    color: #ffffff;
-
+    background: linear-gradient(90deg,#29c5a6,#0097c7);
+    color: #fff;
     /*///////////*/
     font-weight: 900;
     /*  this does not work, go to index html and find "submitButton" there you can change it */
@@ -3775,7 +3776,7 @@ video {
   max-width: 600px;
   aspect-ratio: 1;
   padding: 70px 75px;
-  background: url('./wheel-holder.png') no-repeat;
+  background: url('../img/wheel-holder.png') no-repeat;
   background-size: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -3790,7 +3791,7 @@ video {
   bottom: 0;
   margin: 0 auto;
   content: '';
-  background: url('./wheel-lamps-active.png') 50% 50% no-repeat;
+  background: url('../img/wheel-lamps-active.png') 50% 50% no-repeat;
   background-size: 100% auto;
   width: calc(100% - 10px);
   height: calc(100% - 13px);
@@ -3810,7 +3811,7 @@ video {
   display: block;
   width: 229px;
   height: 295px;
-  background: url('./win-frame.png') no-repeat;
+  background: url('../img/win-frame.png') no-repeat;
   background-size: 100%;
   z-index: 1;
   transform: translateX(-50%);
@@ -3825,7 +3826,7 @@ video {
   height: 230px;
   margin: auto;
   z-index: 2;
-  background: url('./wheel-button-bg.png') 50% 50% no-repeat;
+  background: url('../img/wheel-button-bg.png') 50% 50% no-repeat;
   background-size: 100%;
   background-position: 0 0;
   cursor: pointer;
@@ -3851,7 +3852,7 @@ video {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: url('./wheel-button-glow.png') 50% 50% no-repeat;
+  background: url('../img/wheel-button-glow.png') 50% 50% no-repeat;
   background-size: 100%;
   -webkit-animation: 1.4s glow ease-in-out infinite;
   animation: 1.4s glow ease-in-out infinite;

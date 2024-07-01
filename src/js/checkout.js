@@ -30,10 +30,15 @@ const checkoutInit = () => {
   const checkoutOfferSize = document.querySelector("#checkoutOfferSize");
   const checkoutOldPrice = document.querySelector("#checkoutOldPrice");
   const checkoutNewPrice = document.querySelector("#checkoutNewPrice");
-  //const deliveryHeader = document.querySelector("#deliveryHeader");
-  //const cityFieldLabel = document.querySelector("#cityFieldLabel");
-  //const addressFieldLabel = document.querySelector("#addressFieldLabel");
-  //const zipFieldLabel = document.querySelector("#zipFieldLabel");
+
+  // Components for physical address
+
+  // const deliveryHeader = document.querySelector("#deliveryHeader");
+  // const cityFieldLabel = document.querySelector("#cityFieldLabel");
+  // const addressFieldLabel = document.querySelector("#addressFieldLabel");
+  // const zipFieldLabel = document.querySelector("#zipFieldLabel");
+
+
   const paymentHeader = document.querySelector("#paymentHeader");
   const paymentMethodLabel = document.querySelector("#paymentMethodLabel");
   const personalInfoHeader = document.querySelector("#personalInfoHeader");
@@ -73,20 +78,22 @@ const checkoutInit = () => {
   }
 
   if (localStorage.getItem("__selected_product") === "26468782") {
-    cart.main.oldPrice = "£17.99";
+    cart.main.oldPrice = "SR.299.00";
   } else if (localStorage.getItem("__selected_product") === "26468783") {
-    cart.main.oldPrice = "£17.99";
+    cart.main.oldPrice = "SR.299.00";
   } else if (localStorage.getItem("__selected_product") === "26468784") {
-    cart.main.oldPrice = "£17.99";
+    cart.main.oldPrice = "SR.299.00";
   }
 
   checkoutOldPrice.innerText = cart.main.oldPrice;
   checkoutNewPrice.innerText = cart.main.newPrice;
 
-  //deliveryHeader.innerText = cart.steps.delivery.title;
-  //cityFieldLabel.innerText = cart.steps.delivery.fields.city.field;
-  //addressFieldLabel.innerText = cart.steps.delivery.fields.address.field;
-  //zipFieldLabel.innerText = cart.steps.delivery.fields.zip.field;
+  // Components for physical address
+  // deliveryHeader.innerText = cart.steps.delivery.title;
+  // cityFieldLabel.innerText = cart.steps.delivery.fields.city.field;
+  // addressFieldLabel.innerText = cart.steps.delivery.fields.address.field;
+  // zipFieldLabel.innerText = cart.steps.delivery.fields.zip.field;
+
 
   paymentHeader.innerText = cart.steps.payment.title;
   paymentMethodLabel.innerText = cart.steps.payment.creditCard;
