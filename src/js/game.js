@@ -50,7 +50,7 @@ const modalWin = (imgPath) => {
       "modal__button",
       "modal__button-ok"
     );
-    modalButtonOk.style.background = "linear-gradient(90deg,#29c5a6,#0097c7)";
+    modalButtonOk.style.background = "#001b59";
     modalButtonOk.style.color = "white";
     modalButtonOk.innerText = texts.button.toUpperCase();
     modalButtonOk.ariaLabel = texts.button;
@@ -113,7 +113,7 @@ const modalLose = (countAttempt) => {
     modalButtonOk.type = "button";
     modalButtonOk.classList.add("button", "modal__button", "modal__button-ok");
 
-    modalButtonOk.style.background = "linear-gradient(90deg,#29c5a6,#0097c7)";
+    modalButtonOk.style.background = "#001b59";
 
     modalButtonOk.style.color = "white";
     modalButtonOk.innerText = texts.button.toUpperCase();

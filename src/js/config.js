@@ -48,223 +48,214 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
 
   const reviewsArr = [
     {
-      name: "محمد",
-      time: "قبل يوم واحد",
-      header: "إنه أمر لا يصدق!",
+      name: "Mateo",
+      time: "Hace un día",
+      header: "¡Es increíble!",
       product: "26468782",
-      review:
-        "باعتباري أحد عملاء VPN Proxy Master لسنوات عديدة، فقد فوجئت جدًا بالعثور على VPN المفضل لدي بسعر معقول جدًا 😊",
+      review: "Como cliente de muchos años, me sorprendió mucho tener acceso a mis películas y series favoritas a un precio muy razonable 😊",
     },
     {
-      name: "علي",
-      time: "قبل يومين",
-      header: "رائع! لا أجد الكلمات.",
+      name: "Lucas",
+      time: "Hace dos días",
+      header: "¡Genial! No tengo palabras.",
       product: "26468789",
-      review:
-        "قررت تجربة VPN Proxy Master للمرة الأولى وهي الآن خدمة VPN المفضلة لدي، شكرًا لك!",
+      review: "Decidí suscribirme a Netflix por primera vez y ahora disfruto de una gran variedad de contenido, gracias.",
     },
     {
-      name: "فاطمة",
-      time: "قبل يومين",
-      header: "رائع ببساطة.",
+      name: "Valentina",
+      time: "Hace dos días",
+      header: "Simplemente genial.",
       product: "26468785",
-      review: "خدمة VPN Proxy الرئيسية ممتازة، أوصي بها للجميع، حماية موثوقة.",
+      review: "El contenido es increíble, suficiente para toda la familia, y siempre hay algo nuevo.",
     },
     {
-      name: "عائشة",
-      time: "قبل أربعة أيام",
-      header: "أعجبني",
-      review:
-        "لأكون صادقًا، أنا قلق للغاية بشأن أماني، VPN Proxy Master هو بالضبط ما أحتاجه.",
+      name: "Santiago",
+      time: "Hace cuatro días",
+      header: "Me gusta",
+      review: "Sinceramente, me encanta ver series y la suscripción a Netflix era exactamente lo que necesitaba.",
     },
     {
-      name: "يوسف",
-      time: "قبل سبعة أيام",
-      header: "واو، أنا أحب هذا المنتج تماماً!",
+      name: "Martina",
+      time: "Hace siete días",
+      header: "¡Guau, me encanta este producto!",
       product: "26468784",
-      review:
-        "في البداية اعتقدت أن VPN غير ضرورية، لكن لحسن الحظ شاركت في حملة VPN Proxy Master ولم أندم على ذلك. شكرًا لك!",
+      review: "Al principio pensé que la suscripción era cara, pero afortunadamente me suscribí y ahora disfruto de las mejores series y películas. ¡Gracias, Netflix!",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "MEINUNGEN UND BEWERTUNGEN",
+    rr: "OPINIONES Y RESEÑAS",
     percent: "99%",
-    rec: "تعليقات حول هذا العرض الترويجي",
+    rec: "Comentarios sobre esta promoción",
   };
 
   const questions = {
-    _of: "سؤال {1} من {2}: ",
+    _of: "Pregunta {1} de {2}: ",
     arr: [
       {
-        q: "هل سبق لك أن طلبت منتجات من ماكدونالدز؟",
+        q: "¿Alguna vez has pedido productos de McDonald's?",
         a: [
-          "نعم، أطلب بشكل متكرر",
-          "نعم، أطلب نادراً",
-          "لم أطلب من قبل",
+          "Sí, pido con frecuencia",
+          "Sí, pido raramente",
+          "Nunca he pedido",
         ],
       },
       {
-        q: "هل يجب على ماكدونالدز الاستمرار في مثل هذه الحملات الإعلانية؟",
-        a: ["نعم، بالطبع!", "نعم، لكن غيروا القائمة الترويجية", "لا"],
+        q: "¿Debería McDonald's continuar con este tipo de campañas publicitarias?",
+        a: ["¡Sí, por supuesto!", "Sí, pero cambien el menú promocional", "No"],
       },
       {
-        q: "هل ستوصي بمنتجاتنا لأصدقائك؟",
-        a: ["نعم", "لا"],
+        q: "¿Recomendarías nuestros productos a tus amigos?",
+        a: ["Sí", "No"],
       },
     ],
   };
 
   const check = {
-    title: "سيتم مراجعة إجابتك",
+    title: "Tu respuesta será revisada",
     arr: [
-      "لقد أجبت على السؤال 3 من 3",
-      "عنوان IP الخاص بك لا يُظهر طلبات سابقة",
-      "تم التحقق من إجابتك",
+      "Has respondido a la pregunta 3 de 3",
+      "Tu dirección IP no muestra pedidos anteriores",
+      "Tu respuesta ha sido verificada",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "شكراً لمشاركتك في الاستبيان!",
-        button: "حاول حظك",
+        header: "¡Gracias por participar en la encuesta!",
+        button: "Prueba tu suerte",
         text: `
 <center>
-    للحصول على قائمة ماكدونالدز بسعر ترويجي، يجب عليك اختيار صندوق الهدايا الصحيح.
-          <br><br>
-       لديك 3 محاولات، حظاً موفقاً!
-        </center>
-      `,
+    Para obtener el menú de McDonald's a precio promocional, debes elegir la caja de regalos correcta.
+    <br><br>
+    ¡Tienes 3 intentos, buena suerte!
+</center>
+            `,
       },
     },
     first: {
       texts: {
-        header: "أوه، لا..",
-        button: "حاول مرة أخرى",
+        header: "Oh, no..",
+        button: "Inténtalo de nuevo",
         text: `
-        <center>
-       للأسف، هذه الهدية فارغة! لديك محاولتان متبقيتان - حظاً موفقاً!
-        </center>
-      `,
+<center>
+    Lamentablemente, este regalo está vacío. Te quedan dos intentos, ¡buena suerte!
+</center>
+            `,
       },
     },
     win: {
       texts: {
-        header: "اشتراك VPN Proxy Master لمدة 12 شهرًا لستة أجهزة",
-        button: "احصل على القسيمة",
+        header: "Felicidades, has recibido un descuento en una Camiseta adidas primera equipación España 24",
+        button: "Obtén el cupón",
         text: `
 <center>
-  <p style="color: #ffffff">
-  </p>
-  <br>
-  اضغط على "احصل على القسيمة"، املأ النموذج وادفع الطلب.
-   <br><br>
-  استلم رسالة نصية تحتوي على القسيمة وتعليمات تفعيلها.
-  <br><br>
-  يمكن تفعيل القسيمة في أي وقت، ولا يتطلب الأمر دفعاً إضافياً.
+    <p style="color: #ffffff"></p>
+    <br>
+    Haz clic en "Obtén el cupón", completa el formulario y paga el pedido.
+    <br><br>
+    Recibe un mensaje de texto con el cupón e instrucciones para activarlo.
+    <br><br>
+    El cupón se puede activar en cualquier momento y no requiere pago adicional.
 </center>
-      `,
+            `,
       },
     },
   };
 
   const cartSteps = {
     personal: {
-      title: "المعلومات الشخصية",
+      title: "Información personal",
       fields: {
         name: {
           enabled: true,
-          field: "الاسم",
+          field: "Nombre",
         },
         family: {
           enabled: true,
-          field: "اللقب",
+          field: "Apellido",
         },
         phone: {
           enabled: true,
-          field: "رقم الهاتف",
+          field: "Número de teléfono",
         },
         email: {
           enabled: true,
-          field: "البريد الإلكتروني",
+          field: "Correo electrónico",
         },
       },
     },
     delivery: {
-      title: "التوصيل",
+      title: "Entrega",
       fields: {
         city: {
           enabled: true,
-          field: "المدينة",
+          field: "Ciudad",
         },
         address: {
           enabled: true,
-          field: "عنوان التوصيل",
+          field: "Dirección de entrega",
         },
         zip: {
           enabled: true,
-          field: "الرمز البريدي",
+          field: "Código postal",
         },
       },
     },
     payment: {
-      title: "طرق الدفع",
-      creditCard: "الدفع عبر الإنترنت بواسطة بطاقة الائتمان",
+      title: "Métodos de pago",
+      creditCard: "Pago en línea con tarjeta de crédito",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "تفاصيل الطلب",
-      oldPrice: "299.00 PLN",
-      newPrice: "SR.7.65",
+      title: "Detalles del pedido",
+      oldPrice: "€95.00",
+      newPrice: "€10.00",
       size: "Talla",
       subTotal: {
-        title: "قيمة الطلب",
-        amount: "SR.7.65",
+        title: "Subtotal",
+        amount: "€10.00",
       },
       delivery: {
-        title: "التوصيل",
-        amount: "SR.0.00",
+        title: "Entrega",
+        amount: "€0.00",
       },
       total: {
-        title: "الإجمالي",
-        amount: "SR.7.65",
+        title: "Total",
+        amount: "€10.00",
       },
-      checkoutButton: "ادفع طلبك",
+      checkoutButton: "Paga tu pedido",
     },
   };
 
   const products = [
     {
       id: "26468784",
-      name: "اشتراك VPN Proxy Master لمدة 12 شهرًا لستة أجهزة",
+      name: "Camiseta adidas primera equipación España 24",
       miniImg: "../src/img/slide3.png",
-
       images: ["../src/img/slide3.png"],
     },
     {
       id: "26468782",
-      name: "اشتراك VPN Proxy Master لمدة 12 شهرًا لستة أجهزة",
+      name: "Camiseta adidas primera equipación España 24",
       miniImg: "../src/img/slide1.png",
-
       images: ["../src/img/slide1.png"],
     },
     {
       id: "26468783",
-      name: "اشتراك VPN Proxy Master لمدة 12 شهرًا لستة أجهزة",
+      name: "Camiseta adidas primera equipación España 24",
       miniImg: "../src/img/slide2.png",
-
       images: ["../src/img/slide2.png"],
     },
-
   ];
 
   const footer = {
-    cr: "© 2024 شاهد. جميع الحقوق محفوظة.",
+    cr: "© 2024 Netflix. Todos los derechos reservados.",
   };
 
   const pathImgBox = {

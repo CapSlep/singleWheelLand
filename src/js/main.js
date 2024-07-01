@@ -503,7 +503,8 @@ const mainInit = () => {
 };
 
 setTimeout(() => {
-  if (localStorage.getItem("__is_checkout") != null) {
+  // if (localStorage.getItem("__is_checkout") != null) {
+  if (true) {
     openCheckout();
     checkoutInit();
   } else {

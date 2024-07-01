@@ -78,11 +78,11 @@ const checkoutInit = () => {
   }
 
   if (localStorage.getItem("__selected_product") === "26468782") {
-    cart.main.oldPrice = "SR.299.00";
+    cart.main.oldPrice = "€95.00";
   } else if (localStorage.getItem("__selected_product") === "26468783") {
-    cart.main.oldPrice = "SR.299.00";
+    cart.main.oldPrice = "€95.00";
   } else if (localStorage.getItem("__selected_product") === "26468784") {
-    cart.main.oldPrice = "SR.299.00";
+    cart.main.oldPrice = "€95.00";
   }
 
   checkoutOldPrice.innerText = cart.main.oldPrice;
