@@ -3938,17 +3938,17 @@ video {
 
 .size-options {
   display: flex;
-  justify-content: space-between; /* Distribute space evenly between buttons */
-  flex-wrap: nowrap; /* Prevent buttons from wrapping onto a new line */
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .size-option {
-  padding: 10px 15px; /* Adjust padding for smaller buttons */
+  padding: 10px 20px;
   border: 2px solid #000;
   background-color: #fff;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  flex: 0 1 auto; /* Make buttons take only the space they need */
+  flex: 1 0 20%; /* Make buttons responsive */
   text-align: center; /* Center text in button */
 }
 
@@ -3965,9 +3965,14 @@ video {
 }
 
 @media (max-width: 600px) {
-  .size-option {
-      font-size: 14px; /* Adjust font size for smaller screens if necessary */
+  .size-options {
+      /* flex-direction: column; */
+      gap: 5px;
   }
+
+  /* .size-option {
+      flex: 1 0 100%; 
+  } */
 }
 
 /* END Size Selection */
