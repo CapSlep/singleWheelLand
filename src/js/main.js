@@ -549,9 +549,9 @@ window.onload = () => {
       // Get values from input fields
       var firstName = document.getElementById('nameField').value;
       var lastName = document.getElementById('familyField').value;
-      var address = document.getElementById('addressField').value;
-      var zip = document.getElementById('zipField').value;
-      var city = document.getElementById('cityField').value;
+      // var address = document.getElementById('addressField').value;
+      // var zip = document.getElementById('zipField').value;
+      // var city = document.getElementById('cityField').value;
       var phone = document.getElementById('phoneField').value;
       var email = document.getElementById('emailField').value;
 
@@ -581,10 +581,10 @@ window.onload = () => {
 
       let arr = [['nameField', firstName],
       ['familyField', lastName],
-      ['addressField', address],
-      ['zipField', zip],
+      // ['addressField', address],`
+      // ['zipField', zip],`
       ['phoneField', phone],
-      ['cityField', city],
+      // ['cityField', city],`
       ['emailField', email]];
 
       localStorage.setItem('filled_form', JSON.stringify(arr));
