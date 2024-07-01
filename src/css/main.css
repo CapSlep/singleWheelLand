@@ -3922,3 +3922,52 @@ video {
 }
 
 /* wheel section END */
+
+
+/* Size Selection */
+
+.size-selector {
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+}
+
+.size-label {
+  margin-bottom: 10px;
+}
+
+.size-options {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between buttons */
+  flex-wrap: nowrap; /* Prevent buttons from wrapping onto a new line */
+}
+
+.size-option {
+  padding: 10px 15px; /* Adjust padding for smaller buttons */
+  border: 2px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  flex: 0 1 auto; /* Make buttons take only the space they need */
+  text-align: center; /* Center text in button */
+}
+
+.size-option.selected {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.size-option.disabled {
+  border-color: #ddd;
+  background-color: #f0f0f0;
+  color: #bbb;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .size-option {
+      font-size: 14px; /* Adjust font size for smaller screens if necessary */
+  }
+}
+
+/* END Size Selection */

@@ -114,4 +114,25 @@ const checkoutInit = () => {
 
   submitButton.innerText = cart.main.checkoutButton;
   checkoutPcOffer.innerHTML = checkoutMobileOffer.innerHTML;
+
+  const sizeOptions = document.querySelectorAll('.size-option');
+  const selectedSizeSpan = document.getElementById('selected-size');
+
+  sizeOptions.forEach(option => {
+    option.addEventListener('click', (event) => {
+      if (option.classList.contains('disabled')) return;
+
+      // Prevent default button behavior
+      event.preventDefault();
+
+      // Remove the 'selected' class from all options
+      sizeOptions.forEach(opt => opt.classList.remove('selected'));
+
+      // Add the 'selected' class to the clicked option
+      option.classList.add('selected');
+
+      // Update the displayed selected size
+      selectedSizeSpan.textContent = option.getAttribute('data-size');
+    });
+  });
 };
