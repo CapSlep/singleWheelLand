@@ -237,20 +237,20 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
     {
       id: "26468784",
       name: "Camiseta adidas primera equipación España 24",
-      miniImg: "../src/img/slide3.png",
-      images: ["../src/img/slide3.png"],
+      miniImg: "./src/img/slide3.png",
+      images: ["./src/img/slide3.png"],
     },
     {
       id: "26468782",
       name: "Camiseta adidas primera equipación España 24",
-      miniImg: "../src/img/slide1.png",
-      images: ["../src/img/slide1.png"],
+      miniImg: "./src/img/slide1.png",
+      images: ["./src/img/slide1.png"],
     },
     {
       id: "26468783",
       name: "Camiseta adidas primera equipación España 24",
-      miniImg: "../src/img/slide2.png",
-      images: ["../src/img/slide2.png"],
+      miniImg: "./src/img/slide2.png",
+      images: ["./src/img/slide2.png"],
     },
   ];
 
@@ -259,12 +259,12 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
   };
 
   const pathImgBox = {
-    lid: "../src/img/box-lid.png",
-    lidIOs: "../src/img/box-lid-ios.png",
-    inner: "../src/img/box-inner.png",
-    innerGift: "../src/img/box-inner-gift.png",
-    box: "../src/img/box.png",
-    boxModal: "../src/img/box-modal.png",
+    lid: "./src/img/box-lid.png",
+    lidIOs: "./src/img/box-lid-ios.png",
+    inner: "./src/img/box-inner.png",
+    innerGift: "./src/img/box-inner-gift.png",
+    box: "./src/img/box.png",
+    boxModal: "./src/img/box-modal.png",
   };
 
   exp.__config = {

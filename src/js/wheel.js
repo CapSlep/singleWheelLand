@@ -8,19 +8,19 @@ const spin = () => {
 			name: 'duo',
 			fromTo: [0, 0.33],
 			rotate: '3364',
-			img: '../src/img/slide1.png',
+			img: '../img/slide1.png',
 		},
 		{
 			name: 'trio',
 			fromTo: [0.34, 0.66],
 			rotate: '3550',
-			img: '../src/img/slide2.png',
+			img: '../img/slide2.png',
 		},
 		{
 			name: 'family',
 			fromTo: [0.67, 1],
 			rotate: '3475',
-			img: '../src/img/slide3.png',
+			img: '../img/slide3.png',
 		},
 	];
 
