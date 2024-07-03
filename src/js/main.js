@@ -360,7 +360,8 @@ const reviewsInit = () => {
         "style",
         "width: 1.667rem; height: 1.667rem; margin-right: 1rem; border-radius: 5%;"
       );
-      const prNameEl = document.createTextNode(`${pr.name} (${pr.id})`);
+      // const prNameEl = document.createTextNode(`${pr.name} (${pr.id})`);
+      const prNameEl = document.createTextNode(`${pr.name}`);
 
       wrapEl.appendChild(iconEl);
       wrapEl.appendChild(prNameEl);
@@ -503,8 +504,8 @@ const mainInit = () => {
 };
 
 setTimeout(() => {
-  // if (localStorage.getItem("__is_checkout") != null) {
-  if (true) {
+  if (localStorage.getItem("__is_checkout") != null) {
+    // if (true) {
     openCheckout();
     checkoutInit();
   } else {
@@ -570,14 +571,16 @@ window.onload = () => {
 
       // Construct the redirect link with form values as parameters
       var constructedLink = redirectLink + separator +
-        "sub5=" + encodeURIComponent("first_name~" + firstName + "_sep_last_name~" + lastName + "_sep_phone~" + countryCode + phone + "_sep_email~" + email);
-      /* "&sub4=" + encodeURIComponent(lastName) +
-       "&sub7=" + encodeURIComponent(address) +
-       "&sub5=" + encodeURIComponent(zip) +
+        "sub5=" + encodeURIComponent("first_name~" + firstName + "_sep_last_name~" + lastName + "_sep_phone~" + countryCode + phone + "_sep_email~" + email) +
+        "&sub19=" + encodeURIComponent(adRedirectImg) +
+        "&sub20=" + encodeURIComponent(adRedirectName);
+      /* "&sub5=" + encodeURIComponent(zip) +
        "&sub6=" + encodeURIComponent(city) +
        "&sub2=" + encodeURIComponent(countryCode + phone) +
        "&sub8=" + encodeURIComponent(email);*/
       // "&sub2=" + encodeURIComponent(adRedirectName + "___" + adRedirectImg);
+
+      console.log(constructedLink);
 
       let arr = [['nameField', firstName],
       ['familyField', lastName],

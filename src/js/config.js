@@ -8,8 +8,8 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
 (function (exp) {
-  const countryCode = "sa";
-  const lang = "ar-SA";
+  const countryCode = "es";
+  const lang = "es";
   const locale = lang;
 
   const sizes = {
@@ -52,34 +52,34 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
       time: "Hace un día",
       header: "¡Es increíble!",
       product: "26468782",
-      review: "Como cliente de muchos años, me sorprendió mucho tener acceso a mis películas y series favoritas a un precio muy razonable 😊",
+      review: "Como fan del fútbol durante muchos años, me sorprendió mucho la calidad de la camiseta de la selección nacional de España a un precio muy razonable 😊",
     },
     {
       name: "Lucas",
       time: "Hace dos días",
       header: "¡Genial! No tengo palabras.",
       product: "26468789",
-      review: "Decidí suscribirme a Netflix por primera vez y ahora disfruto de una gran variedad de contenido, gracias.",
+      review: "Decidí comprar la camiseta de la selección nacional de España por primera vez y ahora disfruto de ella cada vez que apoyo a mi equipo, gracias.",
     },
     {
       name: "Valentina",
       time: "Hace dos días",
       header: "Simplemente genial.",
       product: "26468785",
-      review: "El contenido es increíble, suficiente para toda la familia, y siempre hay algo nuevo.",
+      review: "La calidad de la camiseta es increíble, y el tamaño es perfecto! Gracias, la recomendaré a mis amigos.",
     },
     {
       name: "Santiago",
       time: "Hace cuatro días",
       header: "Me gusta",
-      review: "Sinceramente, me encanta ver series y la suscripción a Netflix era exactamente lo que necesitaba.",
+      review: "Sinceramente, me encanta ver fútbol, y la nueva camiseta de la selección nacional de España era exactamente lo que necesitaba.",
     },
     {
       name: "Martina",
       time: "Hace siete días",
       header: "¡Guau, me encanta este producto!",
       product: "26468784",
-      review: "Al principio pensé que la suscripción era cara, pero afortunadamente me suscribí y ahora disfruto de las mejores series y películas. ¡Gracias, Netflix!",
+      review: "Al principio pensé que la camiseta era cara, pero afortunadamente la compré y ahora disfruto de los mejores partidos con ella. ¡Gracias!",
     },
   ];
 
@@ -148,7 +148,7 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
     },
     win: {
       texts: {
-        header: "Felicidades, has recibido un descuento en una Camiseta adidas primera equipación España 24",
+        header: "Camiseta adidas primera equipación España 24",
         button: "Obtén el cupón",
         text: `
 <center>
@@ -215,11 +215,11 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
     main: {
       title: "Detalles del pedido",
       oldPrice: "€95.00",
-      newPrice: "€10.00",
+      newPrice: "€9.99",
       size: "Talla",
       subTotal: {
         title: "Subtotal",
-        amount: "€10.00",
+        amount: "€9.99",
       },
       delivery: {
         title: "Entrega",
@@ -227,7 +227,7 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
       },
       total: {
         title: "Total",
-        amount: "€10.00",
+        amount: "€9.99",
       },
       checkoutButton: "Paga tu pedido",
     },
@@ -255,7 +255,7 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
   ];
 
   const footer = {
-    cr: "© 2024 Netflix. Todos los derechos reservados.",
+    cr: "© 2024, UEFA and Fanatics, Inc.. All rights reserved. No portion of this site may be reproduced or duplicated without the express permission of UEFA and/or Fanatics (as applicable). The words UEFA, UEFA Nations League, UEFA Nations League Finals, Finalissima, UEFA U21 Championships, UEFA EURO and UEFA Women’s EURO and all other UEFA marks, names, mascots and trophies are the property, registered trademarks, designs and/or copyright of UEFA. Store maintained and operated by Fanatics (International) Limited.",
   };
 
   const pathImgBox = {

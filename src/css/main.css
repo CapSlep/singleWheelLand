@@ -2665,7 +2665,7 @@ hr {
 .ratingbox {
   align-content: stretch;
   align-items: stretch;
-  background-color: #1E1A2F;
+  background-color:#001b59;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

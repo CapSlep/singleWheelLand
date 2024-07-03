@@ -33,10 +33,10 @@ const checkoutInit = () => {
 
   // Components for physical address
 
-  // const deliveryHeader = document.querySelector("#deliveryHeader");
-  // const cityFieldLabel = document.querySelector("#cityFieldLabel");
-  // const addressFieldLabel = document.querySelector("#addressFieldLabel");
-  // const zipFieldLabel = document.querySelector("#zipFieldLabel");
+  const deliveryHeader = document.querySelector("#deliveryHeader");
+  const cityFieldLabel = document.querySelector("#cityFieldLabel");
+  const addressFieldLabel = document.querySelector("#addressFieldLabel");
+  const zipFieldLabel = document.querySelector("#zipFieldLabel");
 
 
   const paymentHeader = document.querySelector("#paymentHeader");
@@ -77,22 +77,22 @@ const checkoutInit = () => {
     checkoutOfferSize.remove();
   }
 
-  if (localStorage.getItem("__selected_product") === "26468782") {
-    cart.main.oldPrice = "€95.00";
-  } else if (localStorage.getItem("__selected_product") === "26468783") {
-    cart.main.oldPrice = "€95.00";
-  } else if (localStorage.getItem("__selected_product") === "26468784") {
-    cart.main.oldPrice = "€95.00";
-  }
+  // if (localStorage.getItem("__selected_product") === "26468782") {
+  //   cart.main.oldPrice = "€95.00";
+  // } else if (localStorage.getItem("__selected_product") === "26468783") {
+  //   cart.main.oldPrice = "€95.00";
+  // } else if (localStorage.getItem("__selected_product") === "26468784") {
+  //   cart.main.oldPrice = "€95.00";
+  // }
 
   checkoutOldPrice.innerText = cart.main.oldPrice;
   checkoutNewPrice.innerText = cart.main.newPrice;
 
   // Components for physical address
-  // deliveryHeader.innerText = cart.steps.delivery.title;
-  // cityFieldLabel.innerText = cart.steps.delivery.fields.city.field;
-  // addressFieldLabel.innerText = cart.steps.delivery.fields.address.field;
-  // zipFieldLabel.innerText = cart.steps.delivery.fields.zip.field;
+  deliveryHeader.innerText = cart.steps.delivery.title;
+  cityFieldLabel.innerText = cart.steps.delivery.fields.city.field;
+  addressFieldLabel.innerText = cart.steps.delivery.fields.address.field;
+  zipFieldLabel.innerText = cart.steps.delivery.fields.zip.field;
 
 
   paymentHeader.innerText = cart.steps.payment.title;
@@ -113,7 +113,7 @@ const checkoutInit = () => {
   checkoutTotalTotalAmount.innerText = cart.main.total.amount;
 
   submitButton.innerText = cart.main.checkoutButton;
-  checkoutPcOffer.innerHTML = checkoutMobileOffer.innerHTML;
+  checkoutPcOffer.innerHTML = checkoutMobileOffer?.innerHTML;
 
   const sizeOptions = document.querySelectorAll('.size-option');
   const selectedSizeSpan = document.getElementById('selected-size');
