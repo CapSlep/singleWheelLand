@@ -8,15 +8,16 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
 (function (exp) {
-  const countryCode = "es";
-  const lang = "es";
+  const countryCode = "gb";
+  const lang = "en-GB";
   const locale = lang;
 
   const sizes = {
     enabled: false,
-    selectText: "Talla: ",
+    selectText: "Size: ",
     arr: ["XS", "S", "M", "M/L", "L", "L/XL", "XL", "XXL"],
   };
+
   // I FILL THIS INFO IN MAIN.JS
   const mainProduct = {
     header: "",
@@ -25,140 +26,140 @@ const imageBase = baseUrl ?? landingUrl;
     newPrice: "",
     selectText: "",
     coupon: "",
-    text: `,
-Felicidades!<br><br>
-Participaste en la promoción de Stanley: tienes la oportunidad de comprar el termo con molde para hielo STANLEY QUENCHER H2.0 por solo <b>$37</b>!
-`,
+    text: `
+    Congratulations!<br><br>
+    You participated in the Stanley promotion: you have the opportunity to buy the Stanley Quencher H2.0 Tumbler with Ice Mold for only <b>£37</b>!
+  `,
   };
 
   const notifications = [
     // {
-    // 	user: "Manuel S*****",
-    // 	location: "Barcelona, España",
-    // 	action: "¡Acabo de recibir la joya por 1,95 euros!",
-    // 	timeago: "hace 15 segundos",
+    //  user: "Manuel S*****",
+    //  location: "Barcelona, Spain",
+    //  action: "Just received the jewellery for 1.95 euros!",
+    //  timeago: "15 seconds ago",
     // },
     // {
-    // 	user: "Carlos B******",
-    // 	location: "Madrid, España",
-    // 	action: "¡Acabo de recibir la joya por 1,95 euros!",
-    // 	timeago: "hace 25 segundos",
+    //  user: "Carlos B******",
+    //  location: "Madrid, Spain",
+    //  action: "Just received the jewellery for 1.95 euros!",
+    //  timeago: "25 seconds ago",
     // },
   ];
 
   const reviewsArr = [
     {
-      name: "Mateo",
-      time: "Hace un día",
-      header: "¡Es increíble!",
+      name: "Matthew",
+      time: "One day ago",
+      header: "This is incredible!",
       product: "26468782",
-      review: "Como fan del fútbol durante muchos años, me sorprendió mucho la calidad de la camiseta de la selección nacional de España a un precio muy razonable 😊",
+      review: "As a football fan for many years, I was very surprised by the quality of the Spanish national team jersey at such a reasonable price 😊",
     },
     {
-      name: "Lucas",
-      time: "Hace dos días",
-      header: "¡Genial! No tengo palabras.",
+      name: "Luke",
+      time: "Two days ago",
+      header: "Fantastic! I have no words.",
       product: "26468789",
-      review: "Decidí comprar la camiseta de la selección nacional de España por primera vez y ahora disfruto de ella cada vez que apoyo a mi equipo, gracias.",
+      review: "I decided to buy the Spanish national team jersey for the first time and now I enjoy it every time I support my team, thank you.",
     },
     {
       name: "Valentina",
-      time: "Hace dos días",
-      header: "Simplemente genial.",
+      time: "Two days ago",
+      header: "Simply great.",
       product: "26468785",
-      review: "La calidad de la camiseta es increíble, y el tamaño es perfecto! Gracias, la recomendaré a mis amigos.",
+      review: "The quality of the jersey is amazing, and the size is perfect! Thank you, I will recommend it to my friends.",
     },
     {
-      name: "Santiago",
-      time: "Hace cuatro días",
-      header: "Me gusta",
-      review: "Sinceramente, me encanta ver fútbol, y la nueva camiseta de la selección nacional de España era exactamente lo que necesitaba.",
+      name: "James",
+      time: "Four days ago",
+      header: "I like it",
+      review: "Honestly, I love watching football, and the new Spanish national team jersey was exactly what I needed.",
     },
     {
       name: "Martina",
-      time: "Hace siete días",
-      header: "¡Guau, me encanta este producto!",
+      time: "Seven days ago",
+      header: "Wow, I absolutely love this product!",
       product: "26468784",
-      review: "Al principio pensé que la camiseta era cara, pero afortunadamente la compré y ahora disfruto de los mejores partidos con ella. ¡Gracias!",
+      review: "At first, I thought the jersey was expensive, but fortunately, I bought it and now I enjoy the best matches with it. Thank you!",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "OPINIONES Y RESEÑAS",
+    rr: "REVIEWS AND RATINGS",
     percent: "99%",
-    rec: "Comentarios sobre esta promoción",
+    rec: "comments on this promotion",
   };
 
   const questions = {
-    _of: "Pregunta {1} de {2}: ",
+    _of: "Question {1} of {2}: ",
     arr: [
       {
-        q: "¿Alguna vez has pedido productos de McDonald's?",
+        q: "Have you ever ordered products from McDonald's?",
         a: [
-          "Sí, pido con frecuencia",
-          "Sí, pido raramente",
-          "Nunca he pedido",
+          "Yes, I order frequently",
+          "Yes, I order rarely",
+          "I have never ordered",
         ],
       },
       {
-        q: "¿Debería McDonald's continuar con este tipo de campañas publicitarias?",
-        a: ["¡Sí, por supuesto!", "Sí, pero cambien el menú promocional", "No"],
+        q: "Should McDonald's continue with this type of advertising campaigns?",
+        a: ["Yes, of course!", "Yes, but change the promotional menu", "No"],
       },
       {
-        q: "¿Recomendarías nuestros productos a tus amigos?",
-        a: ["Sí", "No"],
+        q: "Would you recommend our products to your friends?",
+        a: ["Yes", "No"],
       },
     ],
   };
 
   const check = {
-    title: "Tu respuesta será revisada",
+    title: "Your answer will be reviewed",
     arr: [
-      "Has respondido a la pregunta 3 de 3",
-      "Tu dirección IP no muestra pedidos anteriores",
-      "Tu respuesta ha sido verificada",
+      "You have answered question 3 of 3",
+      "Your IP address shows no previous orders",
+      "Your answer has been verified",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "¡Gracias por participar en la encuesta!",
-        button: "Prueba tu suerte",
+        header: "Thank you for participating in the survey!",
+        button: "Try your luck",
         text: `
 <center>
-    Para obtener el menú de McDonald's a precio promocional, debes elegir la caja de regalos correcta.
+    To get the McDonald's menu at a promotional price, you need to choose the correct gift box.
     <br><br>
-    ¡Tienes 3 intentos, buena suerte!
+    You have 3 attempts, good luck!
 </center>
             `,
       },
     },
     first: {
       texts: {
-        header: "Oh, no..",
-        button: "Inténtalo de nuevo",
+        header: "Oh, no...",
+        button: "Try again",
         text: `
 <center>
-    Lamentablemente, este regalo está vacío. Te quedan dos intentos, ¡buena suerte!
+    Unfortunately, this gift is empty. You have two more attempts, good luck!
 </center>
             `,
       },
     },
     win: {
       texts: {
-        header: "Camiseta adidas primera equipación España 24",
-        button: "Obtén el cupón",
+        header: "Adidas England Home Shirt 24",
+        button: "Get the coupon",
         text: `
 <center>
     <p style="color: #ffffff"></p>
     <br>
-    Haz clic en "Obtén el cupón", completa el formulario y paga el pedido.
+    Click "Get the coupon", fill out the form, and pay for the order.
     <br><br>
-    Recibe un mensaje de texto con el cupón e instrucciones para activarlo.
+    Receive a text message with the coupon and instructions on how to activate it.
     <br><br>
-    El cupón se puede activar en cualquier momento y no requiere pago adicional.
+    The coupon can be activated at any time and requires no additional payment.
 </center>
             `,
       },
@@ -167,92 +168,93 @@ Participaste en la promoción de Stanley: tienes la oportunidad de comprar el te
 
   const cartSteps = {
     personal: {
-      title: "Información personal",
+      title: "Personal Information",
       fields: {
         name: {
           enabled: true,
-          field: "Nombre",
+          field: "Name",
         },
         family: {
           enabled: true,
-          field: "Apellido",
+          field: "Surname",
         },
         phone: {
           enabled: true,
-          field: "Número de teléfono",
+          field: "Phone number",
         },
         email: {
           enabled: true,
-          field: "Correo electrónico",
+          field: "Email",
         },
       },
     },
     delivery: {
-      title: "Entrega",
+      title: "Delivery",
       fields: {
         city: {
           enabled: true,
-          field: "Ciudad",
+          field: "City",
         },
         address: {
           enabled: true,
-          field: "Dirección de entrega",
+          field: "Delivery address",
         },
         zip: {
           enabled: true,
-          field: "Código postal",
+          field: "Postcode",
         },
       },
     },
     payment: {
-      title: "Métodos de pago",
-      creditCard: "Pago en línea con tarjeta de crédito",
+      title: "Payment Methods",
+      creditCard: "Online payment with credit card",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Detalles del pedido",
-      oldPrice: "€95.00",
-      newPrice: "€9.99",
-      size: "Talla",
+      title: "Order Details",
+      oldPrice: "84.99",
+      newPrice: "£8.50",
+      size: "Size",
       subTotal: {
         title: "Subtotal",
-        amount: "€9.99",
+        amount: "£8.50",
       },
       delivery: {
-        title: "Entrega",
-        amount: "€0.00",
+        title: "Delivery",
+        amount: "£0.00",
       },
       total: {
         title: "Total",
-        amount: "€9.99",
+        amount: "£8.50",
       },
-      checkoutButton: "Paga tu pedido",
+      checkoutButton: "Pay for your order",
     },
   };
 
   const products = [
     {
       id: "26468784",
-      name: "Camiseta adidas primera equipación España 24",
+      name: "Adidas England Home Shirt 24",
       miniImg: "./src/img/slide3.png",
       images: ["./src/img/slide3.png"],
     },
     {
       id: "26468782",
-      name: "Camiseta adidas primera equipación España 24",
+      name: "Adidas England Home Shirt 24",
       miniImg: "./src/img/slide1.png",
       images: ["./src/img/slide1.png"],
     },
     {
       id: "26468783",
-      name: "Camiseta adidas primera equipación España 24",
+      name: "Adidas England Home Shirt 24",
       miniImg: "./src/img/slide2.png",
       images: ["./src/img/slide2.png"],
     },
   ];
+
 
   const footer = {
     cr: "© 2024, UEFA and Fanatics, Inc.. All rights reserved. No portion of this site may be reproduced or duplicated without the express permission of UEFA and/or Fanatics (as applicable). The words UEFA, UEFA Nations League, UEFA Nations League Finals, Finalissima, UEFA U21 Championships, UEFA EURO and UEFA Women’s EURO and all other UEFA marks, names, mascots and trophies are the property, registered trademarks, designs and/or copyright of UEFA. Store maintained and operated by Fanatics (International) Limited.",
