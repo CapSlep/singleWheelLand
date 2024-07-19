@@ -1,5 +1,5 @@
 const wheelBtn = document.querySelector('.wheel__btn');
-let isFirstSpin = true;
+let isFirstSpin = false;
 
 const spin = () => {
 	const img = document.querySelector('.wheel__item-img');
@@ -8,7 +8,7 @@ const spin = () => {
 			name: 'duo',
 			fromTo: [0, 0.33],
 			rotate: '3364',
-			img: './src/img/slide1.png',
+			img: './src/img/price.png',
 		},
 		{
 			name: 'trio',
@@ -31,7 +31,8 @@ const spin = () => {
 		rotateValue = '4250';  // Adjust this value to ensure it's outside the winning ranges
 	} else {
 		const randomValue = Math.random().toFixed(2);
-		currentDish = dishes.find(dish => randomValue >= dish.fromTo[0] && randomValue <= dish.fromTo[1]);
+		// currentDish = dishes.find(dish => randomValue >= dish.fromTo[0] && randomValue <= dish.fromTo[1]);
+		currentDish = dishes[0];
 		rotateValue = currentDish.rotate;
 	}
 
