@@ -216,20 +216,20 @@ const imageBase = baseUrl ?? landingUrl;
     steps: cartSteps,
     main: {
       title: "Detalles del Pedido",
-      oldPrice: "84.99",
-      newPrice: "£8.50",
+      oldPrice: "€ 95.00",
+      newPrice: "€ 9.99",
       size: "Talla",
       subTotal: {
         title: "Subtotal",
-        amount: "£8.50",
+        amount: "€ 9.99",
       },
       delivery: {
         title: "Entrega",
-        amount: "£0.00",
+        amount: "€ 0.00",
       },
       total: {
         title: "Total",
-        amount: "£8.50",
+        amount: "€ 9.99",
       },
       checkoutButton: "Pagar tu pedido",
     },
