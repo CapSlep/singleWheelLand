@@ -34,16 +34,16 @@ const imageBase = baseUrl ?? landingUrl;
 
   const notifications = [
     // {
-    //  user: "Manuel S*****",
-    //  location: "Barcelona, Spain",
-    //  action: "Just received the jewellery for 1.95 euros!",
-    //  timeago: "15 seconds ago",
+    //   user: "Manuel S*****",
+    //   location: "Barcelona, Spain",
+    //   action: "Just received the jewellery for 1.95 euros!",
+    //   timeago: "15 seconds ago",
     // },
     // {
-    //  user: "Carlos B******",
-    //  location: "Madrid, Spain",
-    //  action: "Just received the jewellery for 1.95 euros!",
-    //  timeago: "25 seconds ago",
+    //   user: "Carlos B******",
+    //   location: "Madrid, Spain",
+    //   action: "Just received the jewellery for 1.95 euros!",
+    //   timeago: "25 seconds ago",
     // },
   ];
 

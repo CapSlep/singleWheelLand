@@ -1,5 +1,5 @@
 const wheelBtn = document.querySelector('.wheel__btn');
-let isFirstSpin = false;
+let isFirstSpin = true;
 
 const spin = () => {
 	const img = document.querySelector('.wheel__item-img');
